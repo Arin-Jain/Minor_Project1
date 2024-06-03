@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brain Tumor Classifier - Result</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding-top: 50px;
+            background-image: url('/static/images/shootingStar.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1 {
+            color: white;
+            font-weight: 600;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .result {
+            background-color: #dff0d8;
+            border-color: #d6e9c6;
+            color: #3c763d;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        a {
+            font-size: 18px;
+            color: #007bff;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: white;
+            font-size: 32px;
+            font-weight: 500;
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: white;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brain Tumor Classifier - Result</h1>
+
+    <h2>Classification Results</h2>
+    <p>The classifier has identified the following:</p>
+    <p><span class="result">{{ tumor_type }}</span> tumor found</p>
+
+    <h2>What does this mean?</h2>
+    <p>If a tumor has been detected, it is important to seek medical attention from a qualified healthcare professional. The results of this classifier are for informational purposes only and should not be used as a substitute for medical advice, diagnosis, or treatment.</p>
+
+    <h2>Upload Another Image</h2>
+    <a href="/">Click here to upload another image</a>
+</body>
+</html>
